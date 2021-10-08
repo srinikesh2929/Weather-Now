@@ -10,7 +10,7 @@ async function myfunc(){
   var output = " " + place + " " + weather + " " + tempinC;
   var info = document.getElementById("info");
   info.innerHTML = output;
-  var icon = responseJSON.weather[0]['icon'];
+  var icon = await responseJSON.weather[0]['icon'];
   var iconImage = "http://openweathermap.org/img/wn/"+ icon + "@2x.png";
   var image = document.getElementById("icon");
   image.src = iconImage;
