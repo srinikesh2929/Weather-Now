@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+        font-family: 'Lato',serif;
+}
+html, body{
+ text-align: center;
+ background: salmon;
+ color: white;
+}
+h3{
+        font-size: 1.5em;
+}
+#input{
+ margin: auto;
+ width: 60%;
+ padding: 10px;
+ background-color: darkslategray;
+ margin-top: 10%;
+ border-radius: 10px;
+ text-transform: capitalize;
+}
+
+input{
+ text-transform: capitalize;
+ text-align: center;
+}
+button{
+ background: seashell;
+ color: black;
+ padding: 10px;
+ margin-top: 2%;
+ border: none;
+}
+#city{
+ padding: 10px;
+}
+#output{
+ visibility: hidden;
+ font-weight: bold;
+ background-color: aquamarine;
+ margin: auto;
+ width: 40%;
+ margin-top: 2%;
+ border-radius: 10px;
+ padding: 10px;
+ color: black;
+}
+
