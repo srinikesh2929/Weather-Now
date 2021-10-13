@@ -17,6 +17,3 @@ async function myfunc(){
   document.getElementById("output").style.visibility = "visible";
   
 }
-
-
-
