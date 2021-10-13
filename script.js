@@ -3,7 +3,7 @@ async function myfunc(){
   var url = "https://api.openweathermap.org/data/2.5/weather?q=" + input + "&appid=49fd6f61e2b89421e0c3b527bc26efd6";
   var response = await fetch(url);
   var responseJSON = await response.json();
-  console.log(responseJSON);
+  // console.log(responseJSON);
   var place = input + " , " + responseJSON.sys['country'];
   var weather = responseJSON.weather[0]['main'];
   var tempinC = (responseJSON.main['temp'] - 273.15).toFixed(2) + " C";
