@@ -3,7 +3,28 @@
 *{
         font-family: 'Lato',serif;
 }
-html, body{
+:root{
+        --width:50vw;
+        color: inherit;
+        
+}
+html{
+display:flex;
+        flex-direction: column;
+        align-items:center;
+ text-align: center;
+ background: salmon;
+ color: white;
+ overflow-x:hidden;
+ height: 100vh;
+         
+         
+}
+body{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 0;
  text-align: center;
  background: salmon;
  color: white;
@@ -14,17 +35,18 @@ h3{
 }
 #input{
  margin: auto;
- width: 60%;
+ width: var(--width);
  padding: 10px;
  background-color: darkslategray;
  margin-top: 10%;
- border-radius: 10px;
+ border-radius: 1rem;
  text-transform: capitalize;
 }
 
 input{
  text-transform: capitalize;
  text-align: center;
+ width: calc(0.5*var(--width));
 }
 button{
  background: seashell;
@@ -32,6 +54,7 @@ button{
  padding: 10px;
  margin-top: 2%;
  border: none;
+ border-radius:0.15rem;
 }
 #city{
  padding: 10px;
@@ -41,10 +64,22 @@ button{
  font-weight: bold;
  background-color: aquamarine;
  margin: auto;
- width: 40%;
+ width: 50vw;
  margin-top: 2%;
  border-radius: 10px;
  padding: 10px;
  color: black;
 }
 
+body  #footer-style {
+        display:flex;
+        /* margin-top: 50vh; */
+        padding: 1em;
+        display:flex;
+        border-radius: 1em;
+        background: #444;
+}
+
+a{
+   color:inherit;
+}
