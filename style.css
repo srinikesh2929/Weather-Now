@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-*{
-        font-family: 'Lato',serif;
+*{        font-family: 'Lato',serif;
 }
 html, body{
  text-align: center;
  background: salmon;
  color: white;
  overflow-x:hidden;
+}
+body{
+        display:flex;
+        flex-direction:column;
 }
 h3{
         font-size: 1.5em;
@@ -47,4 +50,13 @@ button{
  padding: 10px;
  color: black;
 }
+
+a{
+        color:inherit;
+}
+footer
+{
+        margin:auto;
+}
+
 
