@@ -21,6 +21,7 @@ body{
        }
 h3{
         font-size: 1.5em;
+        text-align:center;
 }
 #input{
         display: flex;
@@ -85,4 +86,21 @@ footer a{
 footer a :last-child
 {
         margin: 0 0 0 auto;
+}
+
+@media (max-height:650px) {
+        #input
+        {
+                margin:25vh auto 0 auto;
+        }
+}
+::webkit-scrollbar
+{
+        width:4px;
+        color: transparent;
+}
+::-webkit-scrollbar-thumb
+{
+        color:#777;
+        border-radius: 0.5rem;
 }
