@@ -14,7 +14,7 @@ body{
         padding: 0;
         display:flex;
         flex-direction: column;
-        background: salmon;
+        background: #fa8072;
         color: white;
         overflow-x:hidden;
         height:100%;
@@ -94,7 +94,7 @@ footer a :last-child
                 margin:25vh auto 0 auto;
         }
 }
-::webkit-scrollbar
+::-webkit-scrollbar
 {
         width:4px;
         color: transparent;
