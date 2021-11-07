@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "name": "Wether Now",
+    "name": "Weather Now",
     "short_name": "WeatherNow",
     "start_url": "/",
     "icons": [
