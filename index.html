@@ -43,5 +43,26 @@
         navigator.serviceWorker.register('/weathernowSw.js');
       }
     </script>
+      <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDEIzJImxh43IJBEc_saGzR0mV4e8KN-VQ",
+        authDomain: "weather-now-dd9d9.firebaseapp.com",
+        projectId: "weather-now-dd9d9",
+        storageBucket: "weather-now-dd9d9.appspot.com",
+        messagingSenderId: "665860530975",
+        appId: "1:665860530975:web:c25038c792214b96b6062a",
+        measurementId: "G-D7MT2XETPR"
+      };
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+  </script>
   </body>
 </html>
