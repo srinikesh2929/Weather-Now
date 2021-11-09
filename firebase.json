@@ -5,6 +5,7 @@
     ]
   },
   "hosting": {
+    "site": "weathernowapp",
     "public": "public",
     "ignore": [
       "firebase.json",
