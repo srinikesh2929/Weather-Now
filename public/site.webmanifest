@@ -1,6 +1,6 @@
 {
-    "name": "Weather Now",
-    "short_name": "WeatherNow",
+    "name": "Weather Now App",
+    "short_name": "Weather Now",
     "start_url": "/",
     "icons": [
         {

@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Weather Now</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap"  crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap" crossorigin="anonymous" />
     <meta name="description" content="A simple app to know your weather-now!">
     <meta name="author" content="github@srinikesh2929">
     <meta name="theme-color" content="#fa8072">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">            
+    <link rel="manifest" href="./site.webmanifest">
   </head>
+
   <body>
     <div id="input">
-      <a href="https://weather-now.pages.dev"><h3>WEATHER NOW</h3></a>
-      <input type="text" placeholder="Enter your city" id="city"/>
+      <a href="https://weathernowapp.web.app">
+        <h3>WEATHER NOW</h3>
+      </a>
+      <input type="text" placeholder="Enter your city" id="city" />
       <br>
       <button onclick="myfunc()">Fetch</button>
       <br>
     </div>
     <div id="output">
-      <img alt="weatherIcon" id="icon"/>
+      <img alt="weatherIcon" id="icon" />
       <p id="info"></p>
     </div>
     <footer>
       <span>
-        <a href="https://github.com/srinikesh2929/Weather_App" rel="noreferrer" target="_blank" alt="GitHub Repo"><i class="fab fa-github" alt="GitHub Repo"></i></a>
-        <a href="https://Wa.me/917010586183?text=Oh%20Hi,%20Studev%20aka%20Srinikesh" rel="noreferrer" target="_blank" alt="WhatsApp No."><i class="fab fa-whatsapp" alt="WhatsApp No."></i></a>
-        <a href="mailto:srinikeshlidolearning.12@gmail.com"alt="My GitHub Profile" ><i class="fas fa-envelope-square" alt="My GitHub Profile"></i></a>
+        <a href="https://github.com/srinikesh2929/Weather_App" rel="noreferrer" target="_blank" alt="GitHub Repo"><i
+            class="fab fa-github" alt="GitHub Repo"></i></a>
+        <a href="https://Wa.me/917010586183?text=Oh%20Hi,%20Studev%20aka%20Srinikesh" rel="noreferrer" target="_blank"
+          alt="WhatsApp No."><i class="fab fa-whatsapp" alt="WhatsApp No."></i></a>
+        <a href="mailto:srinikeshlidolearning.12@gmail.com" alt="My GitHub Profile"><i class="fas fa-envelope-square"
+            alt="My GitHub Profile"></i></a>
       </span>
       <span>
         <a href="https://github.com/srinikesh2929/">@srinikesh2929</a>
@@ -39,30 +47,31 @@
     </footer>
     <script defer src="script.js"></script>
     <script>
-      if('serviceWorker' in navigator){
+      if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('./weathernowSw.js');
       }
     </script>
-      <script type="module">
+    <script type="module">
       // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-analytics.js";
       // TODO: Add SDKs for Firebase products that you want to use
       // https://firebase.google.com/docs/web/setup#available-libraries
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
-        apiKey: "AIzaSyDEIzJImxh43IJBEc_saGzR0mV4e8KN-VQ",
-        authDomain: "weather-now-dd9d9.firebaseapp.com",
-        projectId: "weather-now-dd9d9",
-        storageBucket: "weather-now-dd9d9.appspot.com",
-        messagingSenderId: "665860530975",
-        appId: "1:665860530975:web:c25038c792214b96b6062a",
-        measurementId: "G-D7MT2XETPR"
+        apiKey: "AIzaSyAn9EbHkivV2wmCuTKs7_879pvfHNcUzjc",
+        authDomain: "weather-now-839ac.firebaseapp.com",
+        projectId: "weather-now-839ac",
+        storageBucket: "weather-now-839ac.appspot.com",
+        messagingSenderId: "97809170483",
+        appId: "1:97809170483:web:f0631c184796dbb5e12346",
+        measurementId: "G-05Y7Y23ZGV"
       };
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
-  </script>
+    </script>
   </body>
+
 </html>
