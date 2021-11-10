@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "weather-nowapp",
     "public": "public",
     "ignore": [
       "firebase.json",
