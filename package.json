@@ -1,0 +1,28 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "A Weather app using [Open whether map api](https://api.openweathermap.org).<br>\r ### Check your [Weather-now](https://weather-now.pages.dev)",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srinikesh2929/Weather_App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srinikesh2929/Weather_App/issues"
+  },
+  "homepage": "https://github.com/srinikesh2929/Weather_App#readme",
+  "dependencies": {
+    "firebase": "^9.4.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.63.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
