@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "wethernowapp",
     "public": "public",
     "ignore": [
       "firebase.json",
