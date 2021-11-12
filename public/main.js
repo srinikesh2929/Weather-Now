@@ -11,7 +11,7 @@ async function myfunc() {
         var info = document.getElementById("info");
         info.innerHTML = output;
     } catch(err) { 
-        alert('Please type a city name');
+        alert('Please type a city name or Check your internet connection');
     }
   var icon = await responseJSON.weather[0]['icon'];
   var iconImage = await "http://openweathermap.org/img/wn/"+ icon + "@2x.png";
