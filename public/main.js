@@ -14,7 +14,7 @@ async function myfunc() {
         alert('Please type a city name or Check your internet connection');
     }
   var icon = await responseJSON.weather[0]['icon'];
-  var iconImage = await "http://openweathermap.org/img/wn/"+ icon + "@2x.png";
+  var iconImage = await "http://openweathermap.org/img/wn/"+ icon + "@4x.png";
   var image = document.getElementById("icon");
   image.src = iconImage;
   document.getElementById("output").style.visibility = "visible";
