@@ -41,6 +41,7 @@ input{
  text-transform: capitalize;
  text-align: center;
  width: calc(0.5*var(--width));
+ background-color: initial;
 }
 button{
  background: seashell;
