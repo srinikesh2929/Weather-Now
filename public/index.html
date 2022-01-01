@@ -19,19 +19,26 @@
   </head>
 
   <body>
+    <!-- main section starts here!! -->
     <div id="input">
       <a href="https://weather-nowapp.web.app">
         <h3>WEATHER NOW</h3>
       </a>
-      <input type="text" placeholder="Enter your city" id="city" />
+      <input type="text" placeholder="Enter your city" id="city" autofocus />
       <br>
       <button onclick="myfunc()">Fetch</button>
       <br>
     </div>
+    <!-- output section starts -->
     <div id="output">
       <img alt="weatherIcon" id="icon" width="100px" />
-      <p id="info"></p>
+      <p id="place"></p>
+      <p id="temp"></p>
     </div>
+    <!-- output section ends -->
+    <!-- main section ends here!! -->
+
+    <!-- Footer section starts here!! -->
     <footer>
       <span>
         <a href="https://github.com/srinikesh2929/Weather_App" rel="noreferrer" target="_blank" alt="GitHub Repo"><i
@@ -45,8 +52,13 @@
         <a href="https://github.com/srinikesh2929/">@srinikesh2929</a>
       </span>
     </footer>
+    <!-- Footer section ends here!! -->
+
+    <!-- Scripts starts here!! -->
     <script defer src="./index.js"></script>
     <script defer src="./main.js"></script>
+    <!-- Scripts ends here!! -->
+
   </body>
 
 </html>
