@@ -41,7 +41,7 @@ input{
  text-transform: capitalize;
  text-align: center;
  width: calc(0.5*var(--width));
- background-color: initial;
+ background-color: white;
 }
 button{
  background: seashell;
@@ -105,4 +105,10 @@ footer a :last-child
 {
         color:#777;
         border-radius: 0.5rem;
+}
+p{
+        margin: 0;
+}
+p#place{
+        margin-bottom: .5rem;
 }
