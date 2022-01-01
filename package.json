@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "serve": "firebase serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
