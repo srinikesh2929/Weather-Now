@@ -4,7 +4,6 @@ var capitalizeString=(str)=>str[0].toUpperCase()+str.slice(1).toLowerCase()
 async function myfunc() {
 var input = capitalizeString(document.getElementById("city").value);
 var url = "https://api.openweathermap.org/data/2.5/weather?q=" + input + "&appid=49fd6f61e2b89421e0c3b527bc26efd6";
-  const brTag = document.createElement("br");
     try {
         var response = await fetch(url);
         var responseJSON = await response.json();
