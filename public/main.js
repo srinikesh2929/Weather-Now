@@ -35,7 +35,4 @@ async function myfunc() {
   var image = document.getElementById("icon");
   image.src = iconImage;
   document.getElementById("output").style.visibility = "visible";
-  console.log(responseJSON);
-  console.log(responseJSON.main['temp']);
-  console.log(tempInF);
 }
