@@ -1,7 +1,10 @@
 var place = document.getElementById("place");
 var temp = document.getElementById("temp");
-var capitalizeString=(str)=>str[0].toUpperCase()+str.slice(1).toLowerCase()
-// const tempOpt=prompt("Do you want temperature in Celsius or Farenheit?(type C or F)");
+// capitalizing the city names
+var capitalizeString = (str) => str[0].toUpperCase() + str.slice(1).toLowerCase()
+// geeting the unit
+// const tempOption = document.querySelector(tempOption).value();
+// start of thw async function
 async function myfunc() {
   var input = capitalizeString(document.getElementById("city").value);
   var url = "https://api.openweathermap.org/data/2.5/weather?q=" + input + "&appid=49fd6f61e2b89421e0c3b527bc26efd6";
@@ -13,7 +16,7 @@ async function myfunc() {
         var tempInC = (responseJSON.main['temp'] - 273.15).toFixed(2) + " C";
         var tempInF = ((responseJSON.main['temp']-273.15) * 9 / 5 +32).toFixed(2) + " F";
       place.innerHTML = placeV;
-      switch (tempOpt) {
+      switch  (tempOption) {
         case "c":
           temp.innerHTML = tempInC + " , " + weather;
           break;  
