@@ -26,14 +26,11 @@
       </a>
       <input type="text" placeholder="Enter your city" id="city" autofocus />
       <br>
-      <form>
-
-        <div>
-          <label for="c"><input type="radio" id="tempOption" name="tempOption" value="c" checked>Celsius</label>
-          <label for="f"><input type="radio" id="tempOption" name="tempOption" value="f">Farenheit</label>
-          <label for="k"><input type="radio" id="tempOption" name="tempOption" value="k">Kelvin</label>
-        </div>
-      </form>
+      <div>
+        <label for="c"><input type="radio" class="tempOption" name="tempOption" value="c" checked>Celsius</label>
+        <label for="f"><input type="radio" class="tempOption" name="tempOption" value="f">Farenheit</label>
+        <label for="k"><input type="radio" class="tempOption" name="tempOption" value="k">Kelvin</label>
+      </div>
       <br>
       <button onclick="myfunc()">Fetch</button>
       <br>

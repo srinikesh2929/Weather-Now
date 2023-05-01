@@ -3,15 +3,16 @@ var place = document.getElementById("place");
 var temp_Grp = document.getElementsByName("tempOption");
 // capitalizing the city names
 var capitalizeString = (str) => str[0].toUpperCase() + str.slice(1).toLowerCase()
-// geeting the unit
-for (var i = 0; i < temp_Grp.length; i++) {
-  if (temp_Grp[i].checked) {
-    tempOption = temp_Grp[i].value;
-  }
-}
 // const tempOption = document.querySelector(tempOption).value();
 // start of thw async function
 async function myfunc() {
+  // geeting the unit
+  for (var i = 0; i < temp_Grp.length; i++) {
+    if (temp_Grp[i].checked) {
+      tempOption = temp_Grp[i].value;
+      // console.log(tempOption)
+    }
+  }
   var input = capitalizeString(document.getElementById("city").value);
   var url = "https://api.openweathermap.org/data/2.5/weather?q=" + input + "&appid=49fd6f61e2b89421e0c3b527bc26efd6";
     try {
@@ -20,7 +21,8 @@ async function myfunc() {
         var placeV = input + " , " + responseJSON.sys['country'];
         var weather = responseJSON.weather[0]['main'];
         var tempInC = (responseJSON.main['temp'] - 273.15).toFixed(2) + " C";
-        var tempInF = ((responseJSON.main['temp']-273.15) * 9 / 5 +32).toFixed(2) + " F";
+        var tempInF = ((responseJSON.main['temp'] - 273.15) * 9 / 5 + 32).toFixed(2) + " F";
+        var tempInK=(responseJSON.main['temp']).toFixed(2)+" K"
       place.innerHTML = placeV;
       switch  (tempOption) {
         case "c":
@@ -28,6 +30,9 @@ async function myfunc() {
           break;  
         case "f":
           temp.innerHTML = tempInF + " , " + weather;
+          break;
+        case "k":
+          temp.innerHTML = tempInK + " , " + weather;
           break;
       }
     } catch(err) { 
