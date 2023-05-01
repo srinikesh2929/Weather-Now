@@ -1,8 +1,14 @@
+var tempOption = '';
 var place = document.getElementById("place");
-var temp = document.getElementById("temp");
+var temp_Grp = document.getElementsByName("tempOption");
 // capitalizing the city names
 var capitalizeString = (str) => str[0].toUpperCase() + str.slice(1).toLowerCase()
 // geeting the unit
+for (var i = 0; i < temp_Grp.length; i++) {
+  if (temp_Grp[i].checked) {
+    tempOption = temp_Grp[i].value;
+  }
+}
 // const tempOption = document.querySelector(tempOption).value();
 // start of thw async function
 async function myfunc() {
