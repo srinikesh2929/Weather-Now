@@ -112,12 +112,14 @@ p{
 p#place{
         margin-bottom: .5rem;
 }
-#c,#f{
-        margin: 0;
+#c,#f,#k{
+        margin-top: .5rem;
 }
 label{
         font-size: 1rem;
         font-family: 'Lato',serif;
+        margin-right: 15px;
+        line-height: 32px;
 }
 .tempOption{
   -webkit-appearance: none;
@@ -138,7 +140,14 @@ label{
 input:checked {
   border: 6px solid black;
 }
-label {
-  margin-right: 15px;
-  line-height: 32px;
+
+@media (max-width: 767px) {
+  .tempOptions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tempOption {
+    flex: 1 0 50%;
+  }
 }
+

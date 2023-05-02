@@ -20,8 +20,7 @@
   },
   "homepage": "https://github.com/srinikesh2929/Weather_App#readme",
   "dependencies": {
-    "figlet": "^1.5.2",
-    "firebase": "^9.4.0"
+    "figlet": "^1.5.2"
   },
   "devDependencies": {
     "webpack": "^5.63.0",
