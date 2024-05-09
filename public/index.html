@@ -1,70 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <!DOCTYPE html> -->
+<!-- <html lang="en"> -->
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Weather Now</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap" crossorigin="anonymous" />
-    <meta name="description" content="A simple app to know your weather-now!">
-    <meta name="author" content="github@srinikesh2929">
-    <meta name="theme-color" content="#fa8072">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
-  </head>
+<head>
+  <!-- <meta charset="utf-8"> -->
+  <meta name="viewport" content="width=device-width">
+  <title>Weather Now</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap" crossorigin="anonymous" />
+  <meta name="description" content="A simple app to know your weather-now!">
+  <meta name="author" content="github@srinikesh2929">
+  <meta name="theme-color" content="#fa8072">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+</head>
 
-  <body>
-    <!-- main section starts here!! -->
-    <div id="input">
-      <a href="https://weather-nowapp.web.app">
-        <h3>WEATHER NOW</h3>
-      </a>
-      <input type="text" placeholder="Enter your city" id="city" autofocus />
-      <br>
-      <div class="tempOptions>
-        <label for="c"><input type="radio" class="tempOption" name="tempOption" value="c" id="c" checked>Celsius</label>
-        <label for="f"><input type="radio" class="tempOption" name="tempOption" value="f" id="f">Farenheit</label>
-        <label for="k"><input type="radio" class="tempOption" name="tempOption" value="k" id="k">Kelvin</label>
-      </div>
-      <br>
-      <button onclick="myfunc()">Fetch</button>
-      <br>
+<body>
+  <!-- main section starts here!! -->
+  <div id="input">
+    <a href="https://weather-nowapp.web.app">
+      <h3>WEATHER NOW</h3>
+    </a>
+    <input type="text" placeholder="Enter your city" id="city" autofocus />
+    <br>
+    <div class="tempOptions>
+        <label for=" c"><input type="radio" class="tempOption" name="tempOption" value="c" id="c"
+        checked>Celsius</label>
+      <label for="f"><input type="radio" class="tempOption" name="tempOption" value="f" id="f">Farenheit</label>
+      <label for="k"><input type="radio" class="tempOption" name="tempOption" value="k" id="k">Kelvin</label>
     </div>
-    <!-- output section starts -->
-    <div id="output">
-      <img alt="weatherIcon" id="icon" width="100px" />
-      <p id="place"></p>
-      <p id="temp"></p>
-    </div>
-    <!-- output section ends -->
-    <!-- main section ends here!! -->
+    <br>
+    <button onclick="myfunc()">Fetch</button>
+    <br>
+  </div>
+  <!-- output section starts -->
+  <div id="output">
+    <img alt="weatherIcon" id="icon" width="100px" />
+    <p id="place"></p>
+    <p id="temp"></p>
+  </div>
+  <!-- output section ends -->
+  <!-- main section ends here!! -->
 
-    <!-- Footer section starts here!! -->
-    <footer>
-      <span>
-        <a href="https://github.com/srinikesh2929/Weather_App" rel="noreferrer" target="_blank" alt="GitHub Repo"><i
-            class="fab fa-github" alt="GitHub Repo"></i></a>
-        <a href="https://Wa.me/917010586183?text=Oh%20Hi,%20HiveCodr%28Srinikesh%29" rel="noreferrer" target="_blank"
-          alt="WhatsApp Number"><i class="fab fa-whatsapp" alt="WhatsApp No."></i></a>
-        <a href="mailto:srinikeshlidolearning.12@gmail.com" alt="My GitHub Profile"><i class="fas fa-envelope-square"
-            alt="My GitHub Profile"></i></a>
-      </span>
-      <span>
-        <a href="https://github.com/srinikesh2929/">@srinikesh2929</a>
-      </span>
-    </footer>
-    <!-- Footer section ends here!! -->
+  <!-- Footer section starts here!! -->
+  <footer>
+    <span>
+      <a href="https://github.com/srinikesh2929/Weather_App" rel="noreferrer" target="_blank" alt="GitHub Repo"><i
+          class="fab fa-github" alt="GitHub Repo"></i></a>
+      <a href="https://Wa.me/917010586183?text=Oh%20Hi,%20HiveCodr%28Srinikesh%29" rel="noreferrer" target="_blank"
+        alt="WhatsApp Number"><i class="fab fa-whatsapp" alt="WhatsApp No."></i></a>
+      <a href="mailto:srinikeshlidolearning.12@gmail.com" alt="My GitHub Profile"><i class="fas fa-envelope-square"
+          alt="My GitHub Profile"></i></a>
+    </span>
+    <span>
+      <a href="https://github.com/srinikesh2929/">@srinikesh2929</a>
+    </span>
+  </footer>
+  <!-- Footer section ends here!! -->
 
-    <!-- Scripts starts here!! -->
-    <script defer src="./index.js"></script>
-    <script defer src="./main.js"></script>
-    <!-- Scripts ends here!! -->
+  <!-- Scripts starts here!! -->
+  <script defer src="./index.js"></script>
+  <script defer src="./main.js"></script>
+  <!-- Scripts ends here!! -->
 
-  </body>
+</body>
 
 </html>
